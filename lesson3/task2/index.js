@@ -1,4 +1,4 @@
-console.log('0 to string is ' + String(0));
+console.log('17 to string is ' + String(17));
 
 console.log('-17.17 to string is ' + String(-17.17));
 
@@ -20,11 +20,11 @@ console.log("null to number is " + Number(null));
 
 console.log("undefined to string is " + Number(undefined));
 
-console.log("' 20 ' to string is " + Number(' 20 '));
+console.log("'20' to string is " + Number('20'));
 
-console.log("'  ' to string is " + Number('  '));
+console.log("'' to string is " + Number(''));
 
-console.log("' 30d ' to string is " + Number(' 30d '));
+console.log("'30d' to string is " + Number('30d'));
 
 console.log("null to boolean is " + Boolean(null));
 
