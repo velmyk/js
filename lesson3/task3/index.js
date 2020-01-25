@@ -20,7 +20,7 @@ console.log("17===17: ", 17 === 17);
 
 console.log("17 === '17': ", 17 === '17');
 
-console.log("17 === true:", 17 === true);
+console.log("17 === true: ", 17 === true);
 
 console.log("true === false:", true === false);
 
