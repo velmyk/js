@@ -3,10 +3,10 @@
 const a = 17;
 const b = 5;
 
-console.log("'a'>'b': ", a > b);
-console.log("'a'<='b': ", a <= b);
-console.log("'a'=='b': ", a == b);
-console.log("'a'!='b': ", a != b);
+console.log("'a' > 'b': ", a > b);
+console.log("'a' <= 'b': ", a <= b);
+console.log("'a' == 'b': ", a == b);
+console.log("'a' != 'b': ", a != b);
 
 /* сравнение строк */
 console.log("'a'<'b': ", 'a' < 'b');
@@ -21,6 +21,8 @@ console.log("17 === 17: ", 17 === 17);
 console.log("17 === '17': ", 17 === '17');
 
 console.log("17 === true: ", 17 === true);
+
+console.log("'0' === '': ", '0' === '');
 
 console.log("true === false: ", true === false);
 
