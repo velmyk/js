@@ -20,7 +20,7 @@ console.log("null to number is " + Number(null));
 
 console.log("undefined to number is " + Number(undefined));
 
-console.log("' 20 ' to number is " + Number(' 20 '));
+console.log("20 to number is " + Number(20));
 
 console.log("'  ' to number is " + Number('  '));
 
