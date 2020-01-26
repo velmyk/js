@@ -1,4 +1,4 @@
-function fundDivCount(a, b, n) {
+function findDivCount(a, b, n) {
     result = 0;
     for (let i = a; i <= b; i++) {
         if (i % n === 0) {
