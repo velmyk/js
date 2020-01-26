@@ -25,7 +25,7 @@ for (let i = m; i <= n; i++) {
 
     if (isInteger(i / 5)) {
         console.log(i);
-        continue;
+       break;
     } else if (isInteger(i / 2) && isInteger(i / 4)) {
         result += i;
     } else if (isInteger(i / 3)) {
