@@ -1,7 +1,7 @@
 let n = 10;
-let result = "";
+let sum = "";
 
 for (let i = 1; i <= n; i++) {
-    result += i;
+    sum += i;
 }
-console.log(result);
+console.log(sum);
