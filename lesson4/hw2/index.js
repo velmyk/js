@@ -1,4 +1,4 @@
-let m = 7;
+let m = 4;
 let n = 30;
 
 let result = 0;
@@ -25,7 +25,7 @@ for (let i = m; i <= n; i++) {
 
     if (isInteger(i / 5)) {
         console.log(i);
-       break;
+       continue;
     } else if (isInteger(i / 2) && isInteger(i / 4)) {
         result += i;
     } else if (isInteger(i / 3)) {
