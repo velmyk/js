@@ -1,3 +1,5 @@
+"use strict";
+
 function getCustomersList(obj) {
     let result = [];
 
@@ -6,13 +8,28 @@ function getCustomersList(obj) {
     }
 
     for (let i = 0; i < result.length; i++) {
-        result[i].id = Object.keys(customers)[i];
+        result[i].id = Object.keys(obj)[i];
     }
 
     result.sort((a, b) => a.age - b.age)
-
     return result;
 }
+
+// let customersObj = {
+//     'c-id-1': {
+//         name: 'William',
+//         age: 54
+//     },
+//     'c-id-2': {
+//         name: 'Adam',
+//         age: 18
+//     },
+//     'c-id-3': {
+//         name: 'John',
+//         age: 17
+//     },
+// };
+
 
 
 
@@ -25,7 +42,11 @@ function getCustomersList(obj) {
 //         name: 'Tom',
 //         age: 17
 //     },
+//     'customers-id-3': {
+//         name: 'Dima',
+//         age: 18
+//     },
 // }
 
-// getCustomersList(customers);
+console.log(getCustomersList(customersObj));
 // // console.log(Object.keys(customers));
