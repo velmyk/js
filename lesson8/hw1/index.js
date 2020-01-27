@@ -3,7 +3,7 @@ function pickProps(obj, arr) {
 
     arr.forEach(element => {
         if (obj.hasOwnProperty(element)) {
-            newObj[element] = element;
+            newObj[element] = obj[element];
         }
     });
     return newObj;
