@@ -1,4 +1,4 @@
 function sortDesc(array) {
-    let newArray = array.sort((a, b) => b - a)
-return newArray;
+    let newArray = [...array];
+    return newArray.sort((a, b) => b - a)
 }
