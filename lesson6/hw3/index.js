@@ -11,15 +11,17 @@ function sortAsc(array) {
             }
         }
     }
-    return array;
+    return newArray;
 }
+
+let arr = [ 2 ,1 ,9 , 5, 8];
 
 
 function sortDesc(array) {
     let newArray = [...array];
     let n = newArray.length;
     for (let i = n - 1; i > 0; i--) {
-        for (let j = n - 1 - i; j > 0; j--) {
+        for (let j = n - i; j > 0; j--) {
             if (newArray[j - 1] < newArray[j]) {
                 let t = newArray[j - 1];
                 newArray[j - 1] = newArray[j];
@@ -27,5 +29,5 @@ function sortDesc(array) {
             }
         }
     }
-    return array;
+    return newArray;
 }
