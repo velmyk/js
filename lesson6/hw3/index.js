@@ -14,9 +14,6 @@ function sortAsc(array) {
     return newArray;
 }
 
-let arr = [ 2 ,1 ,9 , 5, 8];
-
-
 function sortDesc(array) {
     let newArray = [...array];
     let n = newArray.length;
