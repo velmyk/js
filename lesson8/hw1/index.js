@@ -2,8 +2,9 @@ function pickProps(obj, arr) {
     let newObj = {};
 
     arr.forEach(element => {
-        if (obj[element]) {
+        if (element in obj) {
             newObj[element] = element;
         }
     });
+    return newObj;
 }
