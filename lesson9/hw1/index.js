@@ -48,5 +48,4 @@ function getCustomersList(obj) {
 //     },
 // }
 
-console.log(getCustomersList(customersObj));
-// // console.log(Object.keys(customers));
+// console.log(getCustomersList(customersObj));
