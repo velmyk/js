@@ -1,2 +1,8 @@
-const reverseArray = arr =>
-    Array.isArray(arr) ? arr.reverse() : null;
+const reverseArray = arr => {
+    if (Array.isArray(arr)) {
+        let newArr = [...arr];
+        return newArr.reverse();
+    } else {
+        return null;
+    }
+}
