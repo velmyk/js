@@ -1,7 +1,9 @@
 function transformToObject(arr) {
     const obj = {};
-    for (elem of arr) {
+
+    arr.forEach(elem => {
         obj[elem] = [elem];
-    }
+    });
+
     return obj;
 }
