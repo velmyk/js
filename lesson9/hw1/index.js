@@ -7,8 +7,9 @@ function getCustomersList(obj) {
         result.push(obj[customer])
     }
 
+    let tempArr = Object.keys(obj);
     for (let i = 0; i < result.length; i++) {
-        result[i].id = Object.keys(obj)[i];
+        result[i].id = tempArr[i];
     }
 
     result.sort((a, b) => a.age - b.age)
