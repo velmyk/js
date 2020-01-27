@@ -1,4 +1,4 @@
-function flatArray(array) {
-    let newArray = [...array];
-    return newArray.reduce((a, b) => a.concat(b) 
-}
+const flatArray = (array) => array
+    .reduce(function (acc, elem) {
+        return acc.concat(elem)
+    }, [])
