@@ -1,7 +1,7 @@
 function transformToObject(arr) {
     const obj = {};
     for (elem of arr) {
-        obj[elem][elem];
+        obj[elem] = [elem];
     }
     return obj;
 }
