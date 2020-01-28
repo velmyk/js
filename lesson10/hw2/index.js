@@ -2,7 +2,7 @@ const getRandomNumbers = (length, min, max) => {
 
     let result = [];
 
-    if (min < max) {
+    if (Number.isInteger(max - min) && min < max) {
         for (let i = 0; i < length; i++) {
             result.push(Math.floor(Math.random() * (max - min) + min));
         }
@@ -12,4 +12,4 @@ const getRandomNumbers = (length, min, max) => {
     }
 }
 
-// console.log(getRandomNumbers(5, 5, 10))
+// console.log(getRandomNumbers(5, 7, 10))
