@@ -2,7 +2,7 @@
 
 function getCustomersList(obj) {
     let result = [];
-    let newObj = Object.assign({}, obj);
+    let newObj = {...obj};
     for (let customer in newObj) {
         result.push(newObj[customer])
     }
@@ -16,20 +16,20 @@ function getCustomersList(obj) {
     return result;
 }
 
-// let customersObj = {
-//     'c-id-1': {
-//         name: 'William',
-//         age: 54
-//     },
-//     'c-id-2': {
-//         name: 'Adam',
-//         age: 18
-//     },
-//     'c-id-3': {
-//         name: 'John',
-//         age: 17
-//     },
-// };
+let customersObj = {
+    'c-id-1': {
+        name: 'William',
+        age: 54
+    },
+    'c-id-2': {
+        name: 'Adam',
+        age: 18
+    },
+    'c-id-3': {
+        name: 'John',
+        age: 17
+    },
+};
 
 
 
@@ -49,4 +49,4 @@ function getCustomersList(obj) {
 //     },
 // }
 
-// console.log(getCustomersList(customersObj));
+console.log(getCustomersList(customersObj));
