@@ -1,36 +1,48 @@
-"use strict";
+// "use strict";
+
+// function getCustomersList(obj) {
+//     let result = [];
+//     let newObj = {...obj};
+//     for (let customer in newObj) {
+//         result.push(newObj[customer])
+//     }
+
+//     let tempArr = Object.keys(newObj);
+//     for (let i = 0; i < result.length; i++) {
+//         result[i].id = tempArr[i];
+//     }
+
+//     result.sort((a, b) => a.age - b.age)
+//     return result;
+// }
 
 function getCustomersList(obj) {
-    let result = [];
-    let newObj = {...obj};
-    for (let customer in newObj) {
-        result.push(newObj[customer])
-    }
+    let result = Object.values(obj);
 
-    let tempArr = Object.keys(newObj);
     for (let i = 0; i < result.length; i++) {
-        result[i].id = tempArr[i];
+        result[i].id = Object.keys(obj)[i];
     }
+    return result.sort((a, b) => a.age - b.age)
 
-    result.sort((a, b) => a.age - b.age)
-    return result;
+        
 }
 
-let customersObj = {
-    'c-id-1': {
-        name: 'William',
-        age: 54
-    },
-    'c-id-2': {
-        name: 'Adam',
-        age: 18
-    },
-    'c-id-3': {
-        name: 'John',
-        age: 17
-    },
-};
+// let customersObj = {
+//     'c-id-1': {
+//         name: 'William',
+//         age: 54
+//     },
+//     'c-id-2': {
+//         name: 'Adam',
+//         age: 18
+//     },
+//     'c-id-3': {
+//         name: 'John',
+//         age: 17
+//     },
+// };
 
+// 1  obj => key
 
 
 
@@ -49,4 +61,4 @@ let customersObj = {
 //     },
 // }
 
-console.log(getCustomersList(customersObj));
+// console.log(getCustomersList(customersObj));
