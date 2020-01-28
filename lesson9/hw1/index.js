@@ -1,5 +1,11 @@
-// "use strict";
+ "use strict";
 
+ const getCustomersList = obj =>
+    Object.entries(obj)
+    .map(item => ({id: item[0], ...obj[item[0]]}))
+    .sort((a, b) => a.age - b.age);
+
+    
 // function getCustomersList(obj) {
 //     let result = [];
 //     let newObj = {...obj};
@@ -16,16 +22,6 @@
 //     return result;
 // }
 
-function getCustomersList(obj) {
-    let result = Object.values(obj);
-
-    for (let i = 0; i < result.length; i++) {
-        result[i].id = Object.keys(obj)[i];
-    }
-    return result.sort((a, b) => a.age - b.age)
-
-        
-}
 
 // let customersObj = {
 //     'c-id-1': {
