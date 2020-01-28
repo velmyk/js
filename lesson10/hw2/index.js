@@ -1,13 +1,15 @@
-const getRandomNumbers = (length, start, finish) => {
+const getRandomNumbers = (length, min, max) => {
 
     let result = [];
 
-    if (start >= finish) {
+    if (min <= max) {
         for (let i = 0; i < length; i++) {
-            result.push(Math.random() * (finish - start) + start);
+            result.push(Math.ceil(Math.random() * (max - min) + min));
         }
         return result;
     } else {
         return null;
     }
 }
+
+console.log(getRandomNumbers(5, 2, 10))
