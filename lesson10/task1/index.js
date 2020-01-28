@@ -11,8 +11,7 @@ const getNaNV2 = arr =>
     arr.filter(item => isNaN(item));
 
 const getIntegers = arr =>
-    arr.filter(item => !Number.isInteger(item));
+    arr.filter(item => Number.isInteger(item));
 
 // let arr1 = [2, 3, 5, Infinity, 5];
-
 // console.log(getFiniteNumbers(arr1))
