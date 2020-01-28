@@ -2,12 +2,12 @@
 
 function getCustomersList(obj) {
     let result = [];
-
-    for (let customer in obj) {
-        result.push(obj[customer])
+    let newObj = Object.assign({}, obj);
+    for (let customer in newObj) {
+        result.push(newObj[customer])
     }
 
-    let tempArr = Object.keys(obj);
+    let tempArr = Object.keys(newObj);
     for (let i = 0; i < result.length; i++) {
         result[i].id = tempArr[i];
     }

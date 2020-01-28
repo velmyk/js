@@ -1,29 +1,13 @@
 "use strict";
 
 function getPeople(obj) {
-    let result = Object.entries(obj);
-        result.map(room => Object.entries(room[1]));
-    
-
-
+    // let result = Object.entries(obj);
+    //     result.flat();
+    // let {...rest} = obj;
+    // let {...other} = rest.name;
 
     return result;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const rooms = {
