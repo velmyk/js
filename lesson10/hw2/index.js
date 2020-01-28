@@ -4,7 +4,7 @@ const getRandomNumbers = (length, start, finish) => {
 
     if (start >= finish) {
         for (let i = 0; i < length; i++) {
-            result.push(Math.random() * (start - finish) + finish);
+            result.push(Math.random() * (finish - start) + start);
         }
         return result;
     } else {
