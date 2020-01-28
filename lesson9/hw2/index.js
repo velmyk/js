@@ -1,14 +1,10 @@
 "use strict";
 
 const getPeople = obj =>
-    Object.entries(obj)
-        .map(item => item[1])
-        .flat()
-        .map(item => item.name)
-
-
-
-
+    Object.values(obj)
+    .flat()
+    .map(item => item.name)
+        
 
 // const rooms = {
 //     room1: [
